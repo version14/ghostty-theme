@@ -14,10 +14,15 @@ A terminal color scheme for [Ghostty](https://ghostty.org), built around the **V
 
 ## Installation
 
-1. Copy the variant file(s) you want into `~/.config/ghostty/themes/`:
+1. Get the variant file(s) you want into `~/.config/ghostty/themes/`, either one at a time:
    ```sh
    curl -o ~/.config/ghostty/themes/version14 \
      https://raw.githubusercontent.com/version14/ghostty-theme/main/version14
+   ```
+   or all three at once by cloning the repo:
+   ```sh
+   git clone https://github.com/version14/ghostty-theme /tmp/ghostty-theme
+   cp /tmp/ghostty-theme/version14* ~/.config/ghostty/themes/
    ```
 2. In `~/.config/ghostty/config`, set:
    ```
@@ -26,6 +31,14 @@ A terminal color scheme for [Ghostty](https://ghostty.org), built around the **V
 3. Reload Ghostty's config (`Cmd+Shift+,` or restart) to apply.
 
 Repeat with `version14-black` or `version14-light` for the other variants.
+
+### Verifying the install
+
+```sh
+ghostty +show-config | grep '^theme'
+```
+
+Should print `theme = version14` (or whichever variant you set). If it doesn't, double-check the file actually landed in `~/.config/ghostty/themes/` and that `config` was saved before reloading.
 
 ## Color Palette
 
