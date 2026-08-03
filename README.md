@@ -1,44 +1,49 @@
 # Version 14 Theme for Ghostty
 
-A terminal color scheme for [Ghostty](https://ghostty.org), built around the **Version 14** brand palette — the same palette used across the [Zed](https://github.com/version14/zed-theme), [VS Code](https://github.com/version14/vscode-theme), and [Neovim/Vim](https://github.com/version14/nvim-theme) ports.
+A terminal color scheme for [Ghostty](https://ghostty.org), built around the Version 14 brand palette, the same palette used across the [Zed](https://github.com/version14/zed-theme), [VS Code](https://github.com/version14/vscode-theme), and [Neovim/Vim](https://github.com/version14/nvim-theme) ports.
 
 ## Variants
 
 | Variant | File | Description |
 |---|---|---|
 | **Version 14** | `version14` | Deep dark background with a violet accent |
-| **Version 14 Black** | `version14-black` | Pure black background — ideal for OLED displays |
+| **Version 14 Black** | `version14-black` | Pure black background, for OLED displays |
 | **Version 14 Light** | `version14-light` | Bright neutral surfaces with a deep violet accent |
 
-> The violet accent is currently a **placeholder** hue, standing in for a retired lime-green accent while a permanent replacement is chosen. It will change again in a future release; everything else about the palette is stable.
+> The violet accent is a placeholder hue. It replaces a retired lime green accent and will change again once a permanent hue is chosen. The rest of the palette is stable.
 
 ## Installation
 
-1. Get the variant file(s) you want into `~/.config/ghostty/themes/`, either one at a time:
+1. Copy the variant file you want into `~/.config/ghostty/themes/`.
+
+   One file at a time:
    ```sh
    curl -o ~/.config/ghostty/themes/version14 \
      https://raw.githubusercontent.com/version14/ghostty-theme/main/version14
    ```
-   or all three at once by cloning the repo:
+
+   Or all three at once:
    ```sh
    git clone https://github.com/version14/ghostty-theme /tmp/ghostty-theme
    cp /tmp/ghostty-theme/version14* ~/.config/ghostty/themes/
    ```
+
 2. In `~/.config/ghostty/config`, set:
    ```
    theme = version14
    ```
+
 3. Reload Ghostty's config (`Cmd+Shift+,` or restart) to apply.
 
-Repeat with `version14-black` or `version14-light` for the other variants.
+Repeat step 2 with `version14-black` or `version14-light` to switch variants.
 
-### Verifying the install
+## Verify
 
 ```sh
 ghostty +show-config | grep '^theme'
 ```
 
-Should print `theme = version14` (or whichever variant you set). If it doesn't, double-check the file actually landed in `~/.config/ghostty/themes/` and that `config` was saved before reloading.
+This should print `theme = version14` (or whichever variant you set). If it does not, confirm the file landed in `~/.config/ghostty/themes/` and that `config` was saved before reloading.
 
 ## Color Palette
 
@@ -84,11 +89,15 @@ Should print `theme = version14` (or whichever variant you set). If it doesn't, 
 | Magenta | `#8C2293` |
 | Cyan | `#5F3BBB` |
 
-## Also available for Zed, VS Code, and Neovim/Vim
+## Also available for
 
-- [Zed extension](https://github.com/version14/zed-theme)
-- [VS Code extension](https://github.com/version14/vscode-theme)
-- [Neovim/Vim plugin](https://github.com/version14/nvim-theme)
+- [Zed](https://github.com/version14/zed-theme)
+- [VS Code](https://github.com/version14/vscode-theme)
+- [Neovim](https://github.com/version14/nvim-theme)
+- [Vim](https://github.com/version14/vim-theme)
+- [Starship](https://github.com/version14/starship-theme)
+- [gh-dash](https://github.com/version14/gh-dash-theme)
+- [Atuin](https://github.com/version14/atuin-theme)
 
 ## License
 
