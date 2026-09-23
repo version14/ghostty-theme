@@ -2,6 +2,10 @@
 
 A terminal color scheme for [Ghostty](https://ghostty.org), built around the Version 14 brand palette, the same palette used across the [Zed](https://github.com/version14/zed-theme), [VS Code](https://github.com/version14/vscode-theme), and [Neovim/Vim](https://github.com/version14/nvim-theme) ports.
 
+## Palette source
+
+The shared semantic colors are maintained in [version14/tokens](https://github.com/version14/tokens). This repository keeps Ghostty-native generated files.
+
 ## Variants
 
 | Variant | File | Description |
